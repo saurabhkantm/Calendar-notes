@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-playfair: "Playfair Display", serif;
+    --font-dm-sans: "DM Sans", sans-serif;
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family: var(--font-dm-sans), sans-serif; }
+  ::-webkit-scrollbar { width: 4px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: #e8e2d9; border-radius: 9999px; }
+  .dark ::-webkit-scrollbar-thumb { background: #2e2b27; }
+  *:focus-visible { outline: 2px solid #1a6eb5; outline-offset: 2px; }
+}
+
+@layer components {
+  .icon-btn {
+    @apply w-9 h-9 flex items-center justify-center rounded-md
+           bg-white dark:bg-surface-dark
+           border border-cal-border dark:border-cal-border-dark
+           text-gray-700 dark:text-gray-300 text-sm cursor-pointer
+           hover:bg-accent dark:hover:bg-accent-dark
+           hover:text-white hover:border-accent dark:hover:border-accent-dark
+           transition-all duration-150;
+  }
+  .cal-nav-btn {
+    @apply w-8 h-8 flex items-center justify-center rounded-md text-base
+           border border-cal-border dark:border-cal-border-dark
+           text-gray-700 dark:text-gray-300
+           hover:bg-accent dark:hover:bg-accent-dark
+           hover:text-white hover:border-accent dark:hover:border-accent-dark
+           transition-all duration-150 cursor-pointer;
+  }
+  .form-input {
+    @apply w-full rounded-md px-3 py-2 text-[13px]
+           bg-cal-note dark:bg-cal-note-dark
+           border border-cal-note-border dark:border-cal-note-border-dark
+           text-gray-900 dark:text-gray-100
+           placeholder-cal-muted dark:placeholder-cal-muted-dark
+           outline-none focus:border-accent dark:focus:border-accent-dark
+           transition-colors duration-150;
+  }
+}
+
+@layer utilities {
+  .font-display { font-family: var(--font-playfair); }
+  .font-body { font-family: var(--font-dm-sans); }
+}
