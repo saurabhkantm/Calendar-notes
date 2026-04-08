@@ -1,4 +1,4 @@
-# Cal.NOTES — Interactive Wall Calendar
+#  Calendar.notes — Interactive Wall Calendar
 
 A production-grade, fully responsive wall-calendar web app built with **Next.js 14 (App Router)**, **React 18**, **TypeScript**, **Tailwind CSS**, **Zustand**, and **Framer Motion**.
 
@@ -131,4 +131,4 @@ All date math is in `src/lib/calendarUtils.ts` as pure functions with no side ef
 
 ## 🙌 Author
 
-Simran Choubey
+Saurabh Kant Mishra
