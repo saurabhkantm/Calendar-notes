@@ -8,12 +8,6 @@ A production-grade, fully responsive wall-calendar web app built with **Next.js 
 
 👉 https://cal-notes-lemon.vercel.app/
 -----
- ## 🎥 Video Demonstration
-
-👉 https://youtu.be/9giNwFIqrhQ
-
------
-
 ## How to Run Locally
 ```bash
 git clone 
